@@ -36,27 +36,40 @@
     <div class="container-fluid">
         <div class="row p-3">
             <!--Main bar-->
-            <div class="bg-light col-7 mx-4">
-                <h2 class="pt-3">About Me</h2>
-                <img class="mugshot" src="./assets/images/profile-image.jpg" alt="Tony eats biscuit at Tasty N Sons">
-                <p>I am currently a student in the Northwestern Coding Boot Camp, learning the ropes of web design.</p>
-                <p>I have worked as a copy editor and print designer for the Chicago Tribune since 2014.</p>
-                <p>I grew up in St. Louis, Mo., and earned a bachelor of journalism degree from the Missouri School of Journalism at the University of Missouri.</p>
-                <p>My goal is to create interactive presentations for news products that meet the needs of today's consumers.</p>
-                <p>I have loved biscuits from a young age.</p>
+            <div class="bg-light ml-3 mb-5 col-xs-12 col-md-7">
+                <h2 class="pt-3">Contact</h2>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                      <label>Name:</label>
+                      <input class="form-control" placeholder="e.g. John Smith" name="name">
+                    </div>
+                    <div class="form-group">
+                      <label>Email:</label>
+                      <input class="form-control" placeholder="e.g. jsmith@domain.com" name="email">
+                    </div>
+                    <div class="form-group">
+                      <label>Message:</label>
+                      <br >
+                      <textarea class="form-control" placeholder="Ask me anything!" name="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="my-3 btn btn-primary">Submit</button>
+                  </form>
             </div>
             <!--Sidebar-->
-            <div class="bg-light pt-2 ml-3 col-4">
-                <h3 class="h sidebar-h">Connect with me</h3>
-                <div class ="row p-2 social">
-                    <div class="col-4">
-                        <img class="thumbnail" src="./assets/images/github.png" alt="Github">
-                    </div>
-                    <div class="col-4">
-                        <img class="thumbnail" src="./assets/images/linkedin.png" alt="LinkedIn">
-                    </div>
-                    <div class="col-4">
-                        <img class="thumbnail" src="./assets/images/stackoverflow.png" alt="StackOverflow">
+            <div class="ml-3 col-xs-12 col-md-4">
+                <!-- another div to add background color of proportional height -->
+                <div class="p-3 bg-light">
+                    <h3 class="sidebar-h">Connect with me</h3>
+                    <div class ="row p-2">
+                        <div class="col-4">
+                            <img class="img-fluid" src="./assets/images/github.png" alt="Github">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="./assets/images/linkedin.png" alt="LinkedIn">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="./assets/images/stackoverflow.png" alt="StackOverflow">
+                        </div>
                     </div>
                 </div>
             </div>
